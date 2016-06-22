@@ -6,6 +6,7 @@ import android.graphics.drawable.LayerDrawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
+import android.view.DragEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -19,7 +20,7 @@ import java.util.Map;
 
 public class MainActivity extends Activity {
 
-    private static final int ITEM_COUNT = 20;
+    private static final int ITEM_COUNT = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,14 +60,20 @@ public class MainActivity extends Activity {
         //initialise the selection drawable with the first contrast color
         wheelView.setSelectionColor(getContrastColor(entries.get(0)));
 
-        /*
-        new Handler().postDelayed(new Runnable() {
+
+        wheelView.setOnWheelAngleChangeListener(new WheelView.OnWheelAngleChangeListener() {
             @Override
-            public void run() {
-                //wheelView.setSelectionAngle(-wheelView.getAngleForPosition(5));
-                wheelView.setMidSelected();
+            public void onWheelAngleChange(float angle) {
+
             }
-        }, 3000); */
+        });
+
+        wheelView.setOnWheelRotationStoppedListener(new WheelView.OnWheelRotationStoppedListener() {
+            @Override
+            public void onWheelRotationStopped(WheelView wheelView1) {
+                wheelView1.setSelected(wheelView.getSelectedPosition());
+            }
+        });
     }
 
     //get the materials darker contrast
