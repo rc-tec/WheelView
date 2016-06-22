@@ -1,4 +1,4 @@
-package com.lukedeighton.wheelview;
+package com.lukedeighton.ui;
 
 import android.graphics.Rect;
 

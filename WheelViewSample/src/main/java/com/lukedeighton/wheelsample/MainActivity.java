@@ -6,13 +6,12 @@ import android.graphics.drawable.LayerDrawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
-import android.view.DragEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.lukedeighton.wheelview.WheelView;
-import com.lukedeighton.wheelview.adapter.WheelArrayAdapter;
+import com.lukedeighton.ui.WheelView;
+import com.lukedeighton.ui.adapter.WheelArrayAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

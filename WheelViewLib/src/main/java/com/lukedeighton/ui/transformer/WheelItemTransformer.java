@@ -1,8 +1,8 @@
-package com.lukedeighton.wheelview.transformer;
+package com.lukedeighton.ui.transformer;
 
 import android.graphics.Rect;
 
-import com.lukedeighton.wheelview.WheelView;
+import com.lukedeighton.ui.WheelView;
 
 public interface WheelItemTransformer {
     /**

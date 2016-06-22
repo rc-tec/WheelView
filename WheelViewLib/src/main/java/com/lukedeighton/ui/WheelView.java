@@ -15,7 +15,7 @@
  *   limitations under the License.
  */
 
-package com.lukedeighton.wheelview;
+package com.lukedeighton.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -34,11 +34,11 @@ import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.lukedeighton.wheelview.adapter.WheelAdapter;
-import com.lukedeighton.wheelview.transformer.FadingSelectionTransformer;
-import com.lukedeighton.wheelview.transformer.ScalingItemTransformer;
-import com.lukedeighton.wheelview.transformer.WheelItemTransformer;
-import com.lukedeighton.wheelview.transformer.WheelSelectionTransformer;
+import com.lukedeighton.ui.adapter.WheelAdapter;
+import com.lukedeighton.ui.transformer.FadingSelectionTransformer;
+import com.lukedeighton.ui.transformer.ScalingItemTransformer;
+import com.lukedeighton.ui.transformer.WheelItemTransformer;
+import com.lukedeighton.ui.transformer.WheelSelectionTransformer;
 
 import java.util.ArrayList;
 import java.util.List;

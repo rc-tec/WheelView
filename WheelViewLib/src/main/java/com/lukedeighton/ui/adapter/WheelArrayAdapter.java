@@ -1,4 +1,4 @@
-package com.lukedeighton.wheelview.adapter;
+package com.lukedeighton.ui.adapter;
 
 import java.util.List;
 

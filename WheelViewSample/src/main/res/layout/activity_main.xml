@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.lukedeighton.wheelview.WheelView
+    <com.lukedeighton.ui.WheelView
         android:id="@+id/wheelview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,6 +20,6 @@
         app:wheelItemRadius="41dp"
         app:wheelPosition="bottom"
         app:wheelOffsetY="60dp"
-        app:wheelItemTransformer="com.lukedeighton.wheelview.transformer.SimpleItemTransformer"
+        app:wheelItemTransformer="com.lukedeighton.ui.transformer.SimpleItemTransformer"
         />
 </RelativeLayout>

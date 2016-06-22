@@ -1,7 +1,7 @@
-package com.lukedeighton.wheelview.adapter;
+package com.lukedeighton.ui.adapter;
 
 import android.graphics.drawable.Drawable;
-import com.lukedeighton.wheelview.WheelView;
+import com.lukedeighton.ui.WheelView;
 
 /**
  * <p>
